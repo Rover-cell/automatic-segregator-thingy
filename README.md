@@ -1,1 +1,1 @@
-# automatic-segregator-thingy
+# Automatic-segregator-thingy

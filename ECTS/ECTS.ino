@@ -1,5 +1,5 @@
 /*
-Access the source code for this in 
+Access the source code for this in https://github.com/Rover-cell/automatic-segregator-thingy/blob/main/
 */
 
 #include <Servo.h>

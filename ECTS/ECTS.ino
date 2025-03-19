@@ -13,10 +13,8 @@ const int S2 = 8;
 const int S3 = 7;
 const int sensorOut = 6;
 
-#define IN1 A3
-#define IN2 A2
-#define IN3 A1
-#define IN4 A0
+#define IN1 A1
+#define IN2 A0
 
 const int minPaperR = 1300, maxPaperR = 29000;
 const int minPaperG = 1600, maxPaperG = 29000;
@@ -44,8 +42,6 @@ void setup() {
 
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
 
   digitalWrite(S0, HIGH);
   digitalWrite(S1, LOW);
@@ -148,17 +144,17 @@ void differentiate() {
 }
 
 void stopMotors(){
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
 }
 
 void moveForward(){
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
 }
 void moveBack(){
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
 }
 
 void goToPaperBin(){
